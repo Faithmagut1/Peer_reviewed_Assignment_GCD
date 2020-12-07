@@ -1,0 +1,24 @@
+---
+title: "Codebook"
+author: "Faith Magut"
+date: "12/7/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(codebook)
+```
+
+
+```{r import}
+Final_Data <-read.table("./Final_Data.txt")
+```
+
+```{r codebook}
+codebook::codebook_table(Final_Data)
+```
+
